@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react"
 import Numbers from "../components/Numbers"
 import { act } from "react"
+import "@testing-library/jest-dom"
 
 
 test("Should verify ascending and descending", async () => {
