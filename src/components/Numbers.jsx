@@ -13,6 +13,11 @@ function Numbers() {
     setArr([...a]);
   }
 
+  useEffect(()=>{
+    let a = arr.sort((a, b) => a - b);
+    setArr([...a]);
+  },[])
+
   return (
     <div className="flex flex-col">
       <p data-testid="display">{arr}</p>
